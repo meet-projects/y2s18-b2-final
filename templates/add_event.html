@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add event</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Add your event:</h1>
+
+        <form action="/add_event" method="post">
+
+        <!--  -->
+        <input type="text" name="event_name" placeholder="insert event name">
+        <br>
+        <input type="text" name="event_location" placeholder="insert event location">
+        <br>
+        <input type="text" name="age_limit" placeholder="insert event age limit">
+        <br>
+        <h3>Pick the topic of your event:</h3>
+        <div id="topics">
+        <input type="radio" name="topic" value="animals">animals
+        <input type="radio" name="topic" value="cooking">cooking
+        <input type="radio" name="topic" value="science">science
+        <input type="radio" name="topic" value="dance">dance
+        <input type="radio" name="topic" value="art">art
+        <input type="radio" name="topic" value="theatre">theatre
+        <input type="radio" name="topic" value="poetry">poetry
+        <input type="radio" name="topic" value="music">music
+        </div>
+        <br>
+        <h3>Describe your event:</h3>
+        <input type="text" name="event_description">
+        <br>
+        <input type="submit" value="Submit">
+            
+
+        </form>
+
+    </body>
+</html>

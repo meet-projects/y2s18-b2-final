@@ -11,6 +11,7 @@ class Event(Base):
 	event_location = Column(String)
 	event_description = Column(String)
 	event_topic = Column(String)
+	age_limit = Column(Integer)
 
 
 	def __repr__(self):
