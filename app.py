@@ -20,9 +20,9 @@ def add_event_route():
         return render_template("add_event.html")
     else:                                                          
         event_name = request.form['event_name']
-        event_loction = request.form['event_location']
+        event_location = request.form['event_location']
         event_description = request.form['event_description']
-        event_topic = request.form['event_topic']
+        event_topic = request.form['topic']
         age_limit = request.form['age_limit']
         add_event(event_name, event_topic, event_location , event_description , age_limit)
         return render_template("add_event.html")
@@ -31,10 +31,10 @@ def add_event_route():
 @app.route('/',  methods=['GET', 'POST'])
 def add_user_route():
     if(request.method == 'GET'):
-        return render_template("add.html")
+        return render_template("home.html")
     else:                                                          
         us_name = request.form['user_name']
-        us_loction = request.form['user_location']
+        us_location = request.form['user_location']
         us_age = request.form['user_age']
         user = add_user(us_name,us_age,us_location)
         login_session['name']=user.user_name

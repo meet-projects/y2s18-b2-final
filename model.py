@@ -23,3 +23,11 @@ class Event(Base):
 					self.event_topic)
 
 
+class User(Base):
+	__tablename__ = 'users'
+	
+	user_name = Column(String , primary_key=True)
+	user_location = Column(String)
+	user_age = Column(Integer)
+
+

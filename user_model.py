@@ -4,13 +4,6 @@ from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
 
 Base = declarative_base()
-class User(Base):
-	__tablename__ = 'users'
-	
-	user_name = Column(String , primary_key=True)
-	user_location = Column(String)
-	user_age = Column(Integer)
-
 
 	
 
