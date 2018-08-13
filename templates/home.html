@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>mermedia</title>
+        <link rel="shortcut icon" type="image/jpg" href="../static/logo.jpg">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
     	<img src="../static/logo.jpg"   >
-    	<form>
+    	<form method="post">
 	        <input type="text" name="user_name" placeholder="name">
 	        <br>
 	        <input type="text" name="user_age" placeholder="age">

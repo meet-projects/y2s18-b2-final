@@ -8,9 +8,11 @@ from databases import add_student, get_all_students
 app = Flask(__name__)
 
 # App routing code here
-@app.route('/')
+@app.route('/' )
 def home():
     return render_template('home.html')
+
+
 
 # Running the Flask app
 if __name__ == "__main__":

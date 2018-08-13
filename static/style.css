@@ -4,6 +4,9 @@
     margin: 0;
     border:10;
     border-color: blue;
-}
 
+}
+img{
+	position: relative;2000 left;
+}
 /* Put your styles BELOW this line */
