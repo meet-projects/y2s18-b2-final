@@ -47,9 +47,10 @@ def welcome():
 
     return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books'])
 
-@app.route('/interest_page/<x>')
+@app.route('/interest_page/<string:topic>')
 def interests(topic):
-    return render_template('interest_page.html')
+    events=query_event_by_topic(topic)
+    return render_template('interest_page.html', events=events, topic=topic)
 
 
 
