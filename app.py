@@ -1,13 +1,17 @@
-
+# Flask-related imports
 from flask import Flask, render_template, url_for, redirect, request, session
+
 from flask import session as login_session
 from databases import *
 from user_DB import *
+
 app = Flask(__name__)
 
+# App routing code here
 @app.route('/')
 def home():
     return render_template('home.html')
+
 
 
 @app.route('/add_event',  methods=['GET', 'POST'])
@@ -49,5 +53,7 @@ def interests(topic):
 
 # del login_session['id']
 
+
 if __name__ == "__main__":
     app.run(debug=True)
+    
