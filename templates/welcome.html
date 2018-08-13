@@ -13,11 +13,12 @@
         <h1>Welcome!</h1>
         <h2>Click on one of your interests <br> and check out events or activities you can join!</h2>
         <br>
-        {% for interest in interests %}
+        <form>
+            {% for interest in interests %}
         		<button type= "button" class="btn btn-outline-primary">{{interest}}</button>
-        {%endfor%} 
-        <button id="Add" type= "button" class="btn btn-outline-secondary">Add Info About an Event or Activity!</button>
-
+            {%endfor%} 
+            <button id="Add" type= "button" class="btn btn-outline-secondary">Add Info About an Event or Activity!</button>
+        </form>
         
     </body>
 </html>

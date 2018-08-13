@@ -1,5 +1,5 @@
-from model import Base, Event
-from user_model import*
+from model import *
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
