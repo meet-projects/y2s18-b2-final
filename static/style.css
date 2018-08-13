@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+* {
+    /* Removes extra spacing from all elements on the page */
+    padding: 00;
+    margin: 0;
+    border:10;
+    border-color: blue;
+}
+
+/* Put your styles BELOW this line */
+>>>>>>> 9a20094f95901b13b49df91203889e308a6f35f9
