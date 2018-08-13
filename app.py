@@ -21,9 +21,9 @@ def add_event_route():
         return render_template("add_event.html")
     else:                                                          
         event_name = request.form['event_name']
-        event_loction = request.form['event_location']
+        event_location = request.form['event_location']
         event_description = request.form['event_description']
-        event_topic = request.form['event_topic']
+        event_topic = request.form['topic']
         age_limit = request.form['age_limit']
         add_event(event_name, event_topic, event_location , event_description , age_limit)
         return render_template("add_event.html")
@@ -47,9 +47,10 @@ def welcome():
 
     return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books'])
 
-@app.route('/interest_page/<x>')
+@app.route('/interest_page/<string:topic>')
 def interests(topic):
-    return render_template('interest_page.html')
+    events=query_event_by_topic(topic)
+    return render_template('interest_page.html', events=events, topic=topic)
 
 
 

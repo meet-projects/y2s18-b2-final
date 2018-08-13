@@ -9,18 +9,18 @@
     <body>
 
         <h1> These are the events related to {{topic}}:</h1>
-      <!--   {% for event in events % }
+        {% for event in events %}
         	<p>
-        		{{Event.event_name}}:
+        		{{event.event_name}}:
         		<br>
-        		Descreption:{{Event.event_description}}.
+        		Descreption:{{event.event_description}}.
         		<br>
-        		Location:{{Event.event_location}}.
+        		Location:{{event.event_location}}.
         		<br>
-        		age limit :{{Event.age_limit}}
+        		age limit :{{event.age_limit}}
        
 
         	</p>
-        {%endfor%} -->
+        {%endfor%}
     </body >
 </html>
