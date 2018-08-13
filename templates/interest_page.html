@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{interest}}</title>
+        <title>{{topic}}</title>
         <link rel="shortcut icon" type="image/jpg" href="../static/logo.jpg">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
 
     <body>
 
-        <h1> These are the events related to {{interest}}:</h1>
-        {% for event in events % }
+        <h1> These are the events related to {{topic}}:</h1>
+      <!--   {% for event in events % }
         	<p>
         		{{Event.event_name}}:
         		<br>
@@ -18,9 +18,9 @@
         		Location:{{Event.event_location}}.
         		<br>
         		age limit :{{Event.age_limit}}
-        { % endfor % }
+       
 
         	</p>
-
-    </body>
+        {%endfor%} -->
+    </body >
 </html>
