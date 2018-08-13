@@ -1,5 +1,5 @@
 from model import Base, Event
-
+from user_model import*
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -41,11 +41,8 @@ def delete_event(event_name):
 
 def event_query_by_topiclocation(event_topic, event_location , age_limit , user_age):
 
-	event = session.query(events).filter(event_topic=event_topic, event_location = event_location , age_limit < user_age).first()
+	event = session.query(events).filter(event_topic=event_topic, event_location = event_location , age_limit = user_age).first()
 	return event
-
-
-
 
 
 
