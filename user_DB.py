@@ -14,7 +14,6 @@ def add_user(user_name, user_age , user_location):
 		user_name = user_name,
 		user_age = user_age,
 		user_location = user_location)
-
 	session.add(user_object)
 	session.commit()
 

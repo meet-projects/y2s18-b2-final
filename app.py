@@ -7,6 +7,7 @@ from user_DB import *
 
 app = Flask(__name__)
 
+app.secret_key = 'super secret key'
 # App routing code here
 @app.route('/')
 def home():
@@ -37,8 +38,8 @@ def add_user_route():
         us_location = request.form['user_location']
         us_age = request.form['user_age']
         user = add_user(us_name,us_age,us_location)
-        login_session['name']=User.user_id
-        return render_template("welcome.html")
+        login_session['name']=us_name
+        return render_template("welcome.html", interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books'])
 
 
 @app.route('/welcome',methods=['GET','POST'])
