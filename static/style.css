@@ -1,7 +1,9 @@
 * {
     /* Removes extra spacing from all elements on the page */
-    padding: 0;
+    padding: 00;
     margin: 0;
+    border:10;
+    border-color: blue;
 }
 
 /* Put your styles BELOW this line */
