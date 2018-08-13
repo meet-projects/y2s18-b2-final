@@ -2,6 +2,7 @@
 from flask import Flask, render_template, url_for, redirect, request, session
 
 from databases import *
+from user_DB import *
 app = Flask(__name__)
 
 @app.route('/')
@@ -24,12 +25,17 @@ def add_event_route():
         return render_template("add_event.html")
 
     
+@app.route('/',  methods=['GET', 'POST'])
+def add_user_route():
+    if(request.method == 'GET'):
+        return render_template("add.html")
+    else:                                                          
+        us_name = request.form['user_name']
+        us_loction = request.form['user_location']
+        us_age = request.form['user_age']
+        add_user(us_name,us_age,us_location)
+        
+        return render_template("home.html")
 
-
-# if __name__ == "__main__":
-
-
-
-
-
+if __name__ == "__main__":
     app.run(debug=True)
