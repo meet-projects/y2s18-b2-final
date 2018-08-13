@@ -36,6 +36,12 @@ def add_user_route():
         add_user(us_name,us_age,us_location)
         
         return render_template("home.html")
+@app.route('/interests',methods=['GET','POST'])
+def interests():
+    return render_template('intrests.html')
+
+@app.route('/interests/<')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
