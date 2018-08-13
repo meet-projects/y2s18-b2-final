@@ -1,4 +1,6 @@
-from model import Base, User
+
+from model import *
+
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -14,7 +16,6 @@ def add_user(user_name, user_age , user_location):
 		user_name = user_name,
 		user_age = user_age,
 		user_location = user_location)
-
 	session.add(user_object)
 	session.commit()
 	return user_object

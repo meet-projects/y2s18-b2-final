@@ -1,15 +1,20 @@
-<<<<<<< HEAD
+
 #home{
 	
     width: 50%;
     
    
 }
-body{color: blue}
+/*body{color: blue}*/
 
-img{
+
+	
+#logo_div{
+	background-color: rgba(255, 255, 255, 0.7);
 	position: relative;
-	left: 400px
+	width: 80%;
+	height: 80%; 
+
 }
 #Add{
 	position: relative;
@@ -17,3 +22,13 @@ img{
 	
 
 }
+#body{
+	background-image: url("b2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+#h{
+	color: pink;
+}
+
