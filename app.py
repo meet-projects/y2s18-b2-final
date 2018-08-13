@@ -40,7 +40,7 @@ def add_user_route():
 
 @app.route('/welcome',methods=['GET','POST'])
 def welcome():
-    return render_template('welcome.html', interests= [])
+    return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books'])
 
 @app.route('/interest_page/<x>')
 def interests(topic):
