@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mermedia - Welcome</title>
+        <link rel="shortcut icon" type="image/jpg" href="../static/favicon.jpg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+    </head>
+
+    <body>
+    	<h3> Hello {{user_name}} </h3>
+        <h1>Welcome!</h1>
+        <h2>Click on one of your interests <br> and check out events or activities you can join!</h2>
+        <br>
+        {% for interest in interests %}
+        		<button type= "button" class="btn btn-outline-primary">{{interest}}</button>
+        {%endfor%} 
+        <button id="Add" type= "button" class="btn btn-outline-secondary">Add Info About an Event or Activity!</button>
+
+        
+    </body>
+</html>
