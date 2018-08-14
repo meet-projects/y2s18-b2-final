@@ -9,19 +9,29 @@
     </head>
 
     <body>
-    	<h3> Hello {{user_name}} </h3>
-        <h1>Welcome!</h1>
-        <h2>Click on one of your interests <br> and check out events or activities you can join!</h2>
+        <center>
+    	<h3 class="font"> Hello {{user_name}} </h3>
+        <h1 class="font">Welcome!</h1>
+        <h2 class="font">Click on one of your interests <br> and check out events or activities you can join!</h2>
+        </center>
         <br>
+
+        <center>
+        <div class="btn-group-vertical">
+
         <form method="post">
             {% for interest in interests %}
             <a href="/interest_page/{{interest}}">
         		<button type="button" class="btn btn-outline-primary">{{interest}}</button>
             </a>
             {%endfor%} 
+            </div>
+        </center>
+            <div id="add_event">
             <a href="/add_event">
             <button id="Add" type= "button" class="btn btn-outline-secondary">Add Info About an Event or Activity!</button>
             </a>
+            </div>
         </form>
         
     </body>
