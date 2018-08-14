@@ -12,7 +12,7 @@ class Event(Base):
 	event_description = Column(String)
 	event_topic = Column(String)
 	age_limit = Column(Integer)
-	# event_time = Column(String)
+	event_time = Column(String)
 
 
 	def __repr__(self):
@@ -21,8 +21,8 @@ class Event(Base):
 				"event topic: {}").format(
 					self.event_name,
 					self.event_location,
-					self.event_topic)
-					# self.event_time)
+					self.event_topic,
+					self.event_time)
 
 
 class User(Base):

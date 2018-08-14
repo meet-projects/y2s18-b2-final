@@ -11,14 +11,15 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def add_event(event_name, event_topic, event_location , event_description , age_limit):
+def add_event(event_name, event_topic, event_location , event_description , age_limit, event_time):
 
 	event_object = Event(
 		event_name=event_name,
 		event_topic=event_topic,
 		event_location=event_location,
 		event_description = event_description, 
-		age_limit = age_limit)
+		age_limit = age_limit,
+		event_time=event_time)
 	print(event_object)
 	session.add(event_object)
 	session.commit()
