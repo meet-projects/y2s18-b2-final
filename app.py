@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 app.secret_key = 'super secret key'
 # App routing code here
-@app.route('/')
-def home():
-    return render_template('home.html')
+# @app.route('/')
+# def home():
+#     return render_template('home.html')
 
 
 
@@ -33,28 +33,28 @@ def add_event_route():
 def add_user_route():
     if(request.method == 'GET'):
         return render_template("home.html")
-    else:                                                          
+    else:
         us_name = request.form['user_name']
         us_location = request.form['user_location']
         us_age = request.form['user_age']
         user = add_user(us_name,us_age,us_location)
         login_session['name']=us_name
-        return render_template("welcome.html", interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books'])
+        return redirect("welcome")
 
 
 @app.route('/welcome',methods=['GET','POST'])
 def welcome():
-
-    return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books'])
+    return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books' , 'Animals'])
 
 @app.route('/interest_page/<string:topic>')
 def interests(topic):
-    events=query_event_by_topic(topic)
+    user  = query_user(login_session['name'])
+    events=event_query_by_topiclocation(topic, user.user_location)
     return render_template('interest_page.html', events=events, topic=topic)
 
 
 
-# del login_session['id']
+# del login_session['name']
 
 
 if __name__ == "__main__":

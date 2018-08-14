@@ -8,6 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
     </head>
     <body id="body">
+        <a href="{{ url_for('add_event_route')}} "> add your event </a>
     <center>
     	<div id="logo_div">
     	<img id="logo"  src="../static/logo6.png">
@@ -16,7 +17,7 @@
         <div id="personal_details">
     	<h2 id="h">Join us and find the perfect events and activities for you!</h2>
     	<div id="home">
-    	<form>
+    	<form method="post">
 	        <input type="text" name="user_name" class="form-control" placeholder="name">
 	        <br>
 	        <input type="text" name="user_age" class="form-control" placeholder="age">
@@ -29,6 +30,7 @@
 	    </form>
         </div>
 	</center>
+    <!-- <img src="{{ url_for('static',filename='billblock.png') }}" width=200px height=150px> -->
 	    	
     </body>
 </html>
