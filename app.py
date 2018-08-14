@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 app.secret_key = 'super secret key'
 # App routing code here
-@app.route('/')
-def home():
-    return render_template('home.html')
+# @app.route('/')
+# def home():
+#     return render_template('home.html')
 
 
 
@@ -25,6 +25,7 @@ def add_event_route():
         event_description = request.form['event_description']
         event_topic = request.form['topic']
         age_limit = request.form['age_limit']
+        print (event_topic)
         add_event(event_name, event_topic, event_location , event_description , age_limit)
         return render_template("add_event.html")
 
@@ -50,6 +51,7 @@ def welcome():
 @app.route('/interest_page/<string:topic>')
 def interests(topic):
     events=query_event_by_topic(topic)
+
     return render_template('interest_page.html', events=events, topic=topic)
 
 

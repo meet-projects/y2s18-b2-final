@@ -51,11 +51,5 @@ def event_query_by_topiclocation(event_topic, event_location , age_limit , user_
 def query_event_by_topic(event_topic):
 
 	events = session.query(Event).filter_by(event_topic=event_topic).all()
+	print (events)
 	return events
-
-
-
-
-
-
-
