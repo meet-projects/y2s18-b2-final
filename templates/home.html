@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body id="body">
-        <a href="{{ url_for('add_event')}} "> add your event </a>
+        <a href="{{ url_for('add_event_route')}} "> add your event </a>
     <center>
     	<div id="logo_div">
     	<img id="logo"  src="../static/logo5.png">
@@ -25,7 +25,7 @@
 	        <input type="submit" value="submit" >
 	    </form>
 	</center>
-    <img src="{{ url_for('static,filename=billblock.png') }}" width=200px height=150px>
+    <!-- <img src="{{ url_for('static',filename='billblock.png') }}" width=200px height=150px> -->
 	    	
     </body>
 </html>

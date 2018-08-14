@@ -20,6 +20,10 @@ def add_user(user_name, user_age , user_location):
 	session.commit()
 	return user_object
 
+def query_user(user_name):
+	user = session.query(User).filter_by(user_name=user_name).first()
+	return user
+
 
 
 
