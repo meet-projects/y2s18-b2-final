@@ -6,21 +6,33 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>Add your event:</h1>
+        <h1 style="font-family:Comfortaa">Add your event:</h1>
 
         <form action="/add_event" method="post">
 
         <!--  -->
-        <input type="text" name="event_name" placeholder="insert event name">
+        <input type="text" name="event_name" placeholder="insert event name" style="font-family:Comfortaa">
         <br>
-        <input type="text" name="event_location" placeholder="insert event location">
+        <!-- <input type="text" name="event_location" placeholder="insert event location"> -->
+        <select name="event_location" placeholder="location" style="font-family:Comfortaa">
+              <option value="Jerusalem">Jerusalem</option>
+              <option value="Nazareth">Nazareth</option>
+              <option value="Tel Aviv">Tel Aviv</option>
+              <option value="Haifa">Haifa</option>
+              <option value="North">North</option>
+              <option value="Bethlehem">Bethlehem</option>
+              <option value="Eilat">Eilat</option>
+              <option value="Ramallah">Ramallah</option>
+              <option value="Ashkelon">Ashkelon</option>
+        </select>
+            
         <br>
-        <input type="text" name="age_limit" placeholder="insert event age limit">
+        <input type="text" name="age_limit" placeholder="insert event age limit" style="font-family:Comfortaa">
         <br>
         <!-- <input type="text" name="event_time" placeholder="insert the time of the event"> -->
         <br>
-        <h3>Pick the topic of your event:</h3>
-        <div id="topics">
+        <h3 style="font-family:Comfortaa">Pick the topic of your event:</h3>
+        <div id="topics" style="font-family:Comfortaa">
         <input type="radio" name="topic" value="Animals">Animals
         <input type="radio" name="topic" value="Cooking">Cooking
         <input type="radio" name="topic" value="Science">Science
@@ -34,12 +46,12 @@
         <input type="radio" name="topic" value="Gaming">Gaming
         </div>
         <br>
-        <h3>Describe your event:</h3>
-        <input type="text" name="event_description">
+        <h3 style="font-family:Comfortaa">Describe your event:</h3>
+        <input type="text" name="event_description" style="font-family:Comfortaa">
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" style="font-family:Comfortaa">
         <br>
-        <a href="{{ url_for('welcome')}} "> Back to home page! </a>
+        <a href="{{ url_for('welcome')}} " style="font-family:Comfortaa"> Back to home page! </a>
             
 
         </form>
