@@ -7,8 +7,11 @@
 }
 /*body{color: blue}*/
 .font{
-	font-family: 'Open Sans';
-}
+	color: black;
+	font-family: 'Comfortaa';
+	font-weight: bold;
+
+}	
 #add_event{
 	position: fixed;
 	top:3%;
@@ -30,7 +33,7 @@
 	
 
 }
-#body{
+.body{
 	background-image: url("b6.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -47,5 +50,3 @@ Q
 	height: 50%;
 	width: 60%;
 }
-
-
