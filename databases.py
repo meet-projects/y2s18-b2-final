@@ -4,8 +4,9 @@ from model import *
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import NullPool
 
-engine = create_engine('sqlite:///students.db')
+engine = create_engine('sqlite:///students.db', poolclass=NullPool)
 Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
