@@ -30,22 +30,28 @@
 #Add{
 	position: relative;
 	right: 0px;
+	font-family: 'Comfortaa';
+
 	
 
 }
-#con{
-	position: fixed;
+/*#con{*/
+	/*position: fixed;
 	top: 3%
-	right: 4%;
+	right: 5%;
 }
+#Contact{
+	position: relative;
+	right: 0px;
 
+}
+*/
 	
 
 .body{
 	background-image: url("b6.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-Q
 }
 #h{
 	color: white;
