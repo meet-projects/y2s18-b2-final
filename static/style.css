@@ -7,7 +7,7 @@
 }
 /*body{color: blue}*/
 .font{
-	font-family: 'Pacifico';
+	font-family: 'Open Sans';
 }
 #add_event{
 	position: fixed;
@@ -38,9 +38,14 @@ Q
 }
 #h{
 	color: white;
-	font-family: 'Pacifico';
+	font-family: 'Comfortaa';
+	font-weight: bold;
+	font-size: 28px;
 }
-#personal_details{
-	background-color: rgba(26, 137, 210, 0.5);
+.container-fluid{
+	background-color: rgba(100, 88, 81, 0.3);
+	height: 50%;
+	width: 60%;
 }
+
 
