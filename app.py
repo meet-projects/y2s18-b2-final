@@ -44,7 +44,7 @@ def add_user_route():
 
 @app.route('/welcome',methods=['GET','POST'])
 def welcome():
-    return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books' , 'Animals'])
+    return render_template('welcome.html', interests = ['Music','Poetry','Theatre','Art','Dance','Science','Cooking','Books' , 'Animals','Movies','Gaming'])
 
 @app.route('/interest_page/<string:topic>')
 def interests(topic):
@@ -53,7 +53,14 @@ def interests(topic):
     return render_template('interest_page.html', events=events, topic=topic)
 
 
-
+@app.route('/contact' , methods=['GET', 'POST'])
+def add_complaint():
+    if(request.method == 'GET'):
+        return render_template("contact.html")
+    else:
+        ms_name = request.form['massager']
+        ms_content = request.form['content']
+        return redirect("/")
 # del login_session['name']
 
 

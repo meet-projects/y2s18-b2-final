@@ -30,3 +30,9 @@ class User(Base):
 	user_age = Column(Integer)
 	user_name = Column(String)
 
+class Massege(Base):
+	__tablename__ = 'Masseges'
+	massege_id = Column(Integer , primary_key=True)
+	massege_name=Column(String)
+	massege_description = Column(String)
+
