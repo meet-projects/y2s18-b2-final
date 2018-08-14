@@ -4,6 +4,7 @@ from flask import Flask, render_template, url_for, redirect, request, session
 from flask import session as login_session
 from databases import *
 from user_DB import *
+from contact_db import *
 
 app = Flask(__name__)
 
@@ -63,8 +64,6 @@ def add_complaint():
         ms_content = request.form['content']
         return redirect("/")
 # del login_session['name']
-
-
 if __name__ == "__main__":
     app.run(debug=True)
     
