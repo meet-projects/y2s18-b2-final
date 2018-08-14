@@ -15,28 +15,35 @@
         <div>
     	<h3 class="font"> Hello {{user_name}} </h3>
         <h1 class="font">Welcome!</h1>
-        <h2 class="font">Click on one of your interests <br> and check out events or activities you can join!</h2>
+        <h2 class="font">Click on one of the topics <br> and check out events or activities that are related to it and you can join!</h2>
         </div>
         </center>
         <br>
 
         <center>
-        <div class="btn-group-vertical">
+        <div>
 
-        <form method="post">
+        <!-- <form method="post"> -->
             {% for interest in interests %}
-            <a href="/interest_page/{{interest}}">
-        		<button type="button" class="btn btn-outline-primary">{{interest}}</button>
-            </a>
+                <a href="/interest_page/{{interest}}">
+        		<button id="interest_btn" type="button" class="btn btn-outline-primary" >{{interest}}</button>
+                </a>
+            
             {%endfor%} 
-            </div>
+
+        </div>
         </center>
             <div id="add_event">
-            <a href="/add_event">
-            <button id="Add" type= "button" class="btn btn-outline-secondary">Add Info About an Event or Activity!</button>
-            </a>
+                <a href="/add_event">
+                <button id="Add" type= "button" class="btn btn-outline-secondary">Add Info About an Event or Activity!</button>
+                </a>
             </div>
-        </form>
+            <div id="con">
+                <a href="/contact">
+                <button id="Contact" type= "button" class="btn btn-outline-secondary">Contact Us!</button>
+                </a>
+            </div>
+        <!-- </form> -->
         
     </body>
 </html>

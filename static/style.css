@@ -33,6 +33,14 @@
 	
 
 }
+#con{
+	position: fixed;
+	top: 3%
+	right: 4%;
+}
+
+	
+
 .body{
 	background-image: url("b6.jpg");
 	background-repeat: no-repeat;
@@ -49,4 +57,12 @@ Q
 	background-color: rgba(100, 88, 81, 0.3);
 	height: 50%;
 	width: 60%;
+}
+
+
+#interest_btn {
+	font-family: 'Comfortaa';
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
 }
