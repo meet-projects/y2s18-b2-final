@@ -16,18 +16,37 @@
     	</div>
         <br>
         <div class= "container-fluid">
-    	<h2 id="h">Join us and find the perfect events and activities for you, new friends <br> and create yourself a full, happy life!</h2>
+    	<h2 id="h" style="color: #006699">Join us and find the perfect events and activities for you, new friends <br> and create yourself a full, happy life!</h2>
         <br>
     	<div id="home">
     	<form method="post">
-	        <input type="text" name="user_name" class="form-control" placeholder="name" style="font-family:Comfortaa">
-	        <br>
-	        <input type="text" name="user_age" class="form-control" placeholder="age" style="font-family:Comfortaa">
-	        <br>
-	        <input type="text" name="user_location" class="form-control" placeholder="location" style="font-family:Comfortaa">
+
+	        <input type="text" name="user_name" class="form-control" placeholder="name" style="font-family:Comfortaa" >
 	        <br>
 	        
+
+	        <input  min = "10" max = "110" type="number" name="user_age" class="form-control" placeholder="age" style="font-family:Comfortaa">
+
+	        <br>
+	        <select name="user_location" placeholder="age" style="font-family:Comfortaa">
+			  <option value="Jerusalem">Jerusalem</option>
+			  <option value="Nazareth">Nazareth</option>
+			  <option value="Tel Aviv">Tel Aviv</option>
+			  <option value="Haifa">Haifa</option>
+			  <option value="North">North</option>
+			  <option value="Bethlehem">Bethlehem</option>
+	          <option value="Eilat">Eilat</option>
+	          <option value="Ramallah">Ramallah</option>
+	          <option value="Ashkelon">Ashkelon</option>
+
+			</select>
+			<br>
+			<br>
+	        <!-- <input type="text" name="user_location" class="form-control" placeholder="location" style="font-family:Comfortaa">
+	        <br> -->
+	        
 	        <input type="submit" class="btn btn-light" value="submit" style="font-family:Comfortaa">
+            <br>
             <br>
             
 	    </form>
