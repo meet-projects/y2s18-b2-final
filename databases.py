@@ -43,9 +43,9 @@ def delete_event(event_name):
 	session.query(Event).filter_by(event_name=event_name).delete()
 	session.commit()
 
-def event_query_by_topiclocation(event_topic, event_location , age_limit , user_age):
+def event_query_by_topiclocation(event_topic, event_location):
 
-	event = session.query(Event).filter(event_topic=event_topic, event_location = event_location , age_limit = user_age).first()
+	event = session.query(Event).filter(event_topic=event_topic, event_location = event_location).first()
 	return event
 
 def query_event_by_topic(event_topic):
