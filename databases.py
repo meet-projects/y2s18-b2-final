@@ -1,4 +1,7 @@
+
+
 from model import *
+
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -15,7 +18,8 @@ def add_event(event_name, event_topic, event_location , event_description , age_
 		event_topic=event_topic,
 		event_location=event_location,
 		event_description = event_description, 
-		age_limit = int(age_limit))
+		age_limit = age_limit)
+	print(event_object)
 	session.add(event_object)
 	session.commit()
 
@@ -36,13 +40,18 @@ def query_all():
 
 def delete_event(event_name):
 	
-	session.query(events).filter_by(event_name=event_name).delete()
+	session.query(Event).filter_by(event_name=event_name).delete()
 	session.commit()
 
 def event_query_by_topiclocation(event_topic, event_location , age_limit , user_age):
 
-	event = session.query(events).filter(event_topic=event_topic, event_location = event_location , age_limit = user_age).first()
+	event = session.query(Event).filter(event_topic=event_topic, event_location = event_location , age_limit = user_age).first()
 	return event
+
+def query_event_by_topic(event_topic):
+
+	events = session.query(Event).filter_by(event_topic=event_topic).all()
+	return events
 
 
 

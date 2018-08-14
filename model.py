@@ -25,8 +25,8 @@ class Event(Base):
 
 class User(Base):
 	__tablename__ = 'users'
-	
 	user_id = Column(Integer , primary_key=True)
 	user_location = Column(String)
 	user_age = Column(Integer)
 	user_name = Column(String)
+
