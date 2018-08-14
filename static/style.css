@@ -33,12 +33,17 @@
 	
 
 }
-#con{
-	position: fixed;
+/*#con{*/
+	/*position: fixed;
 	top: 3%
-	right: 4%;
+	right: 5%;
 }
+#Contact{
+	position: relative;
+	right: 0px;
 
+}
+*/
 	
 
 .body{

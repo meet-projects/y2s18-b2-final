@@ -4,15 +4,19 @@
         <title>Mermedia - Add an Event</title>
         <link rel="shortcut icon" type="image/jpg" href="../static/favicon.jpg">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     </head>
     <body>
-        <h1 style="font-family:Comfortaa">Add your event:</h1>
+        <center>
+        <h1 class= "font">Add your event:</h1>
+        <br>
 
         <form action="/add_event" method="post">
 
         <!--  -->
         <input type="text" name="event_name" placeholder="insert event name" style="font-family:Comfortaa">
+        <br>
         <br>
         <!-- <input type="text" name="event_location" placeholder="insert event location"> -->
         <select name="event_location" placeholder="location" style="font-family:Comfortaa">
@@ -28,9 +32,12 @@
         </select>
             
         <br>
+        <br>
         <input type="text" name="age_limit" placeholder="insert event age limit" style="font-family:Comfortaa">
         <br>
+        <br>
         <input type="text" name="event_time" placeholder="insert the time of the event">
+        <br>
         <br>
         <h3 style="font-family:Comfortaa">Pick the topic of your event:</h3>
         <div id="topics" style="font-family:Comfortaa">
@@ -47,15 +54,19 @@
         <input type="radio" name="topic" value="Gaming">Gaming
         </div>
         <br>
+        <br>
         <h3 style="font-family:Comfortaa">Describe your event:</h3>
         <input type="text" name="event_description" style="font-family:Comfortaa">
         <br>
+        <br>
         <input type="submit" value="Submit" style="font-family:Comfortaa">
+        <br>
         <br>
         <a href="{{ url_for('welcome')}} " style="font-family:Comfortaa"> Back to home page! </a>
             
 
         </form>
+        </center>
 
     </body>
 </html>
