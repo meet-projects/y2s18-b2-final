@@ -25,7 +25,6 @@ def add_event_route():
         event_description = request.form['event_description']
         event_topic = request.form['topic']
         age_limit = request.form['age_limit']
-        print (event_topic)
         add_event(event_name, event_topic, event_location , event_description , age_limit)
         return render_template("add_event.html")
 
@@ -49,9 +48,8 @@ def welcome():
 
 @app.route('/interest_page/<string:topic>')
 def interests(topic):
-
-    events=event_query_by_topiclocation(topic, user_location)
-
+    user  = query_user(login_session['name'])
+    events=event_query_by_topiclocation(topic, user.user_location)
     return render_template('interest_page.html', events=events, topic=topic)
 
 
