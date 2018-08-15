@@ -4,14 +4,12 @@
         <title>{{topic}}</title>
         <link rel="shortcut icon" type="image/jpg" href="../static/logo.jpg">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     </head>
 
-    <body id="intrest_page">
+    <body>
 
         <h1> These are the events related to {{topic}}:</h1>
         {% for event in events %}
-        <div id="events_for">
         	<p>
         		{{event.event_name}}:
         		<br>
@@ -20,13 +18,11 @@
         		Location:{{event.event_location}}.
         		<br>
         		age limit :{{event.age_limit}}
-                <br>
-                Date & Time:{{event.event_time}}
+                <br> 
+                Event Time:{{event.event_time}} 
         	</p>
-            </div>
         {%endfor%}
         <a href="{{ url_for('welcome')}} "> Back to home page! </a>
         <br>
-     
     </body >
 </html>
