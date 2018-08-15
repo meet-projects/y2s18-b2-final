@@ -10,7 +10,12 @@
 
         <h1> These are the events related to {{topic}}:</h1>
         {% for event in events %}
+
+        <div id="events_for">
+        	<p style="font-family:Comfortaa">
+
         	<p>
+
         		{{event.event_name}}:
         		<br>
         		Descreption:{{event.event_description}}.

@@ -35,10 +35,26 @@
         <form action="/add_event" method="post">
 
         <!--  -->
-        <input type="text" class="form-control name="event_name" placeholder="insert event name" style="font-family:Comfortaa">
+        <input type="text" class="form-control name="event_name" placeholder="Insert Event Name" style="font-family:Comfortaa">
         <br>
+        <br>
+        <h3 class="title" style="font-family:Comfortaa">Pick the topic of your event:</h3>
+        <div id="topics" style="font-family:Comfortaa">
+        <input type="radio" name="topic" value="Animals">Animals
+        <input type="radio" name="topic" value="Cooking">Cooking
+        <input type="radio" name="topic" value="Science">Science
+        <input type="radio" name="topic" value="Dance">Dance
+        <input type="radio" name="topic" value="Art">Art
+        <input type="radio" name="topic" value="Theatre">Theatre
+        <input type="radio" name="topic" value="Poetry">Poetry
+        <input type="radio" name="topic" value="Music">Music
+        <input type="radio" name="topic" value="Books">Books
+        <input type="radio" name="topic" value="Movie">Movie
+        <input type="radio" name="topic" value="Gaming">Gaming
+        </div>
         <br>
         <!-- <input type="text" name="event_location" placeholder="insert event location"> -->
+        <h3 class="title" style="font-family:Comfortaa"> In Which City? </h3>
         <select name="event_location" placeholder="location" style="font-family:Comfortaa">
               <option value="Jerusalem">Jerusalem</optihomeon>
               <option value="Nazareth">Nazareth</option>
@@ -54,7 +70,13 @@
         <br>
         <br>
 
-        <input type="number" name="age_limit" class="form-control" placeholder="insert event age limit" style="font-family:Comfortaa">
+        <h3 class= "title" style="font-family:Comfortaa">Adress Of The Event: </h3>
+        <input type="text" name="event_adress" placeholder="event adress" style="font-family:Comfortaa">
+        <br>
+        <br>
+        <h3 class= "title" style="font-family:Comfortaa">Age Limit:</h3>
+
+        <input type="number" name="age_limit" class="form-control" placeholder="Insert event age limit" style="font-family:Comfortaa">
 
         
 
@@ -62,36 +84,29 @@
         <br>
 
         <br>
-        <input type="text" name="event_time" class="form-control" style="font-family:Comfortaa" placeholder="insert the time of the event">
+         <h3 class= "title" style="font-family:Comfortaa">When?</h3>
+        <input type="text" name="event_time" class="form-control" style="font-family:Comfortaa" placeholder="Insert the time of the event">
         <br>
+        <br>
+        <h3 class= "title" style="font-family:Comfortaa" >Date:</h3>
+
+
+            <input  style="font-family:Comfortaa" type="date" id="event_time" name="event_time"
+               value="2018-07-29"
 
             <input type="date" id="event_time" name="event_time"
                value="0000-00-00"
+
                min="2018-01-01" max="2022-12-31"/ >
+        <br>
         
 
         <br>
-        <h3 style="font-family:Comfortaa">Pick the topic of your event:</h3>
-        <div id="topics" style="font-family:Comfortaa">
-        <input type="radio" name="topic" value="Animals">Animals
-        <input type="radio" name="topic" value="Cooking">Cooking
-        <input type="radio" name="topic" value="Science">Science
-        <input type="radio" name="topic" value="Dance">Dance
-        <input type="radio" name="topic" value="Art">Art
-        <input type="radio" name="topic" value="Theatre">Theatre
-        <input type="radio" name="topic" value="Poetry">Poetry
-        <input type="radio" name="topic" value="Music">Music
-        <input type="radio" name="topic" value="Books">Books
-        <input type="radio" name="topic" value="Movie">Movie
-        <input type="radio" name="topic" value="Gaming">Gaming
-        </div>
-        <br>
+        
 
-        <br>
-        <input type="text" name="event_adress" placeholder="event adress" style="font-family:Comfortaa">
-        <br>
+        
 
-        <h3 style="font-family:Comfortaa">Describe your event:</h3>
+        <h3 class= "title" style="font-family:Comfortaa">Describe your event:</h3>
         <input type="text" name="event_description" class="form-control" placeholder="Description" style="font-family:Comfortaa">
         <br>
 
@@ -115,6 +130,7 @@
         <input type="submit" value="Submit" style="font-family:Comfortaa">
         <br>
         <a href="{{ url_for('welcome')}} " style="font-family:Comfortaa"> Back to home page! </a>
+
 
             
 
