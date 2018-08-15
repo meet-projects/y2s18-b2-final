@@ -129,3 +129,29 @@
 .title{
 	font-weight: bold;
 }
+#card{
+	position: relative;
+	align-items: center;
+	border-radius: 30%;
+	width: 40%;
+	height: 20%;
+	background-color: rgba(100, 88, 81, 0.3);
+
+
+}
+.card-header{
+	font-size: 25px;
+	font-weight: bold;
+
+}
+
+.text{
+	font-size: 18px;
+}
+.titles{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+

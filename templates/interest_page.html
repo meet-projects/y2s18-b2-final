@@ -5,6 +5,7 @@
         <link rel="shortcut icon" type="image/jpg" href="../static/logo.jpg">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
 
     <body id="interest_body">
@@ -12,33 +13,20 @@
         <div id="events_for">
 
         <h1> These are the events related to {{topic}}:</h1>
-        {% for event in events %}
-
         
-        	
-
-        	<p>
-
-        		{{event.event_name}}:
-        		<br>
-        		Descreption:  {{event.event_description}}.
-        		<br>
-                <br>
-        		Location:  {{event.event_location}} , {{event.event_adress}}.
-                <br>
-
-        		<br>
-
-        		age limit:  {{event.age_limit}}
-                <br>
-
-                <br>
-                Date & Time:  {{event.event_date}} at {{event.event_time}}
-                <br><br>
+        
 
 
-        	</p>
-        {%endfor%}
+{% for event in events %}
+<div class="card border-info mb-3" style="max-width: 25rem;">
+  <div class="card-header">{{event.event_name}}:</div>
+  <div class="card-body">
+    
+    <p class="card-text"><div class= "titles"> Descreption: </div> <br><div class= "text">  {{event.event_description}}.</div> <br><br> <div class= "titles">Location:</div> <br>  <div class= "text">{{event.event_location}} , {{event.event_adress}}.</div> <br> <br> <div class= "titles">age limit:</div>  <br> <div class= "text">{{event.age_limit}} </div><br> <br> <div class= "titles">Date & Time: </div> <br><div class= "text"> {{event.event_date}} at {{event.event_time}} </div></p>
+  </div>
+</div>
+{%endfor%}
+
         <a href="{{ url_for('welcome')}} "> Back to home page! </a>
         <br>
         </div>
