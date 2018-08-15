@@ -14,13 +14,44 @@
 }	
 #add_event{
 	position: fixed;
-	top:3%;
-	right: 1%;
-	background-color: rgba(100, 88, 81, 0.5);
+	top: 0.5%;
+	right: 0.5%;
+	
+	background-color: rgba(100, 88, 81, 0.4);
 	color: white;
 	font-weight: bold;
 
 }
+#log{
+	position: fixed;
+	top: 0.5%;
+	right: 25.5%;
+	
+	background-color: rgba(100, 88, 81, 0.4);
+	color: white;
+	font-weight: bold;
+
+}
+#boop{
+	position: fixed;
+	top: 0.5%;
+	right: 0.5%;
+	
+	background-color: rgba(100, 88, 81, 0.4);
+	color: white;
+	font-weight: bold;
+
+}
+#noop{
+	position: fixed;
+	top: 0.5%;
+	right: 8.2%;
+	
+	background-color: rgba(100, 88, 81, 0.4);
+	color: white;
+	font-weight: bold;
+}
+
 
 
 	
@@ -35,8 +66,11 @@
 	position: relative;
 	right: 0px;
 	font-family: 'Comfortaa';
-
-	
+}
+#Log{
+	position: relative;
+	right: 0px;
+	font-family: 'Comfortaa';
 
 }
 /*#con{*/
@@ -74,10 +108,11 @@
 
 }
 #h{
-	color: #0B4B94;
+	color: #684D46;
 	font-family: 'Comfortaa';
 	font-weight: bold;
 	font-size: 28px;
+	-webkit-text-stroke: 0.4px white;
 }
 .container-fluid{
 	background-color: rgba(100, 88, 81, 0.3);
@@ -95,6 +130,7 @@
 	font-size: 25px;
 	font-weight: bold;
 }
+
 
 
 
@@ -136,6 +172,13 @@
 
 
 }
+#as{
+	font-weight: bold;
+	color: white;
+
+}
+
+
 .card-header{
 	font-size: 25px;
 	font-weight: bold;
@@ -152,6 +195,8 @@
 	font-size: 20px;
 	color: white;
 }
+
+
 
 
 

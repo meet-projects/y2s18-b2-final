@@ -8,26 +8,16 @@
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     </head>
     <body id="adding">
-    <ul class="nav nav-tabs">
-        <a class="navbar-brand">
-            <img src="../static/mini_logo.png" width="230" height="60">
-        </a>
-        <li class="nav-item">
-            <a class="nav-link active" href="{{ url_for('welcome')}} " style="font-family:Comfortaa">Home</a>
-        </li>
-        <li class="nav-item">
-
-
-            <a class="nav-link active " href="{{ url_for('log_out')}} " style="font-family:Comfortaa">Log Out</a>
-
-
-            <a class="nav-link" href="{{ url_for('log_out')}} " style="font-family:Comfortaa">Log Out</a>
-
-
-        </li>
-         
-
-    </ul>
+   <div id="boop">
+                <a href="/log_out">
+                <button id="Log" type= "button" class="btn btn-outline-light">Log Out</button>
+                </a>
+            </div>
+    <div id="noop">
+                <a href="/welcome">
+                <button id="Log" type= "button" class="btn btn-outline-light">Home</button>
+                </a>
+            </div>
     <br>
     <center>
     <div id="adding_content">
@@ -88,7 +78,7 @@
         <br>
 
         <br>
-         <h3 class= "title" style="font-family:Comfortaa">When?</h3>
+         <h3 class= "title" style="font-family:Comfortaa">When?(hour)</h3>
         <input type="text" name="event_time" class="form-control" style="font-family:Comfortaa" placeholder="Insert the time of the event">
         <br>
         <br>

@@ -9,10 +9,23 @@
     </head>
 
     <body id="interest_body">
+    <div id="boop">
+                <a href="/log_out">
+                <button id="Log" type= "button" class="btn btn-outline-dark">Log Out</button>
+                </a>
+            </div>
+    <div id="noop">
+                <a href="/welcome">
+                <button id="Log" type= "button" class="btn btn-outline-dark">Home</button>
+                </a>
+            </div>
         <center>
         <div id="events_for">
+        <br>
 
-        <h1> These are the events related to {{topic}}:</h1>
+        <h1 id= "as"> These are the events related to {{topic}}:</h1>
+        <br>
+        <br>
         
         
 
@@ -27,7 +40,7 @@
 </div>
 {%endfor%}
 
-        <a href="{{ url_for('welcome')}} "> Back to home page! </a>
+        
         <br>
         </div>
         </center>
