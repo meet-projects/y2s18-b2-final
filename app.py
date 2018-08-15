@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 app.secret_key = 'super secret key'
 # App routing code here
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
+@app.route('/')
+def home():
+   return render_template('home.html')
 
 
 
@@ -64,7 +64,16 @@ def add_complaint():
         ms_name = request.form['massager']
         ms_content = request.form['content']
         return redirect("/")
+
+
+@app.route('/log_out')
+def log_out():
+    del login_session['name']
+    return redirect("/")
 # del login_session['name']
 if __name__ == "__main__":
     app.run(debug=True)
     
+
+
+
