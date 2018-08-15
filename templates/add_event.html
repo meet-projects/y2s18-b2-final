@@ -13,7 +13,7 @@
             <a class="nav-link active" href="{{ url_for('welcome')}} ">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/home">Log Out</a>
+            <a class="nav-link" href="/">Log Out</a>
         </li>
     <center>
     <div id="adding_content">
@@ -29,7 +29,7 @@
         <br>
         <!-- <input type="text" name="event_location" placeholder="insert event location"> -->
         <select name="event_location" placeholder="location" style="font-family:Comfortaa">
-              <option value="Jerusalem">Jerusalem</option>
+              <option value="Jerusalem">Jerusalem</optihomeon>
               <option value="Nazareth">Nazareth</option>
               <option value="Tel Aviv">Tel Aviv</option>
               <option value="Haifa">Haifa</option>
@@ -50,7 +50,7 @@
         <br>
 
             <input type="date" id="event_time" name="event_time"
-               value="2018-07-29"
+               value="0000-00-00"
                min="2018-01-01" max="2022-12-31"/ >
         
 
@@ -84,7 +84,12 @@
                 <button id="Add" type= "button" class="btn btn-outline-secondary" style="font-family:Comfortaa">Back to Home Page!</button>
                 </a>
             </div>
-
+      
+        <div class="log_out">
+                <a href= "{{ url_for('home')}} ">
+                <button id="log" type= "button" class="btn btn-outline-secondary" style="font-family:Comfortaa">Log out</button>
+                </a>
+            </div>
         <input type="submit" value="Submit" style="font-family:Comfortaa">
         <br>
         <a href="{{ url_for('welcome')}} " style="font-family:Comfortaa"> Back to home page! </a>
