@@ -17,8 +17,11 @@
         </li>
         <li class="nav-item">
 
+
             <a class="nav-link active " href="{{ url_for('log_out')}} " style="font-family:Comfortaa">Log Out</a>
 
+
+            <a class="nav-link" href="{{ url_for('log_out')}} " style="font-family:Comfortaa">Log Out</a>
 
 
         </li>
@@ -35,7 +38,7 @@
         <form action="/add_event" method="post">
 
         <!--  -->
-        <input type="text" class="form-control name="event_name" placeholder="Insert Event Name" style="font-family:Comfortaa">
+        <input type="text" class="form-control" name="event_name" placeholder="Insert Event Name" style="font-family:Comfortaa">
         <br>
         <br>
         <h3 class="title" style="font-family:Comfortaa">Pick the topic of your event:</h3>
@@ -91,13 +94,7 @@
         <h3 class= "title" style="font-family:Comfortaa" >Date:</h3>
 
 
-            <input  style="font-family:Comfortaa" type="date" id="event_time" name="event_time"
-               value="2018-07-29"
-
-            <input type="date" id="event_time" name="event_time"
-               value="0000-00-00"
-
-               min="2018-01-01" max="2022-12-31"/ >
+            <input  style="font-family:Comfortaa" type="date" value="2018-07-29" input type="date" id="event_time" name="event_date" value="0000-00-00"             min="2018-01-01" max="2022-12-31">
         <br>
         
 
