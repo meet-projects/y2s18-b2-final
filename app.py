@@ -30,7 +30,7 @@ def add_event_route():
         event_adress = request.form['event_adress']
         event_date = request.form['event_date']
         add_event(event_name, event_topic, event_location, event_description, age_limit, event_time , event_adress, event_date)
-        return redirect("interests")
+        return redirect (url_for('interests', topic=event_topic))
 
     
 @app.route('/',  methods=['GET', 'POST'])
