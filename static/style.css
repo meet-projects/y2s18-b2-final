@@ -53,6 +53,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#adding{
+	background-image: url("b7.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+#adding_content{
+	width: 50%;
+
+}
 #h{
 	color: white;
 	font-family: 'Comfortaa';
