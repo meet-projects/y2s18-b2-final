@@ -7,15 +7,24 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     </head>
-    <body>
-        <center>
+    <body id="adding">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for('welcome')}} ">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/home">Log Out</a>
+        </li>
+    <center>
+    <div id="adding_content">
+        
         <h1 class= "font">Add your event:</h1>
         <br>
 
         <form action="/add_event" method="post">
 
         <!--  -->
-        <input type="text" name="event_name" placeholder="insert event name" style="font-family:Comfortaa">
+        <input type="text" class="form-control name="event_name" placeholder="insert event name" style="font-family:Comfortaa">
         <br>
         <br>
         <!-- <input type="text" name="event_location" placeholder="insert event location"> -->
@@ -33,10 +42,10 @@
             
         <br>
         <br>
-        <input type="text" name="age_limit" placeholder="insert event age limit" style="font-family:Comfortaa">
+        <input type="text" name="age_limit" class="form-control" placeholder="insert event age limit" style="font-family:Comfortaa">
         <br>
         <br>
-        <input type="text" name="event_time" placeholder="insert the time of the event">
+        <input type="text" name="event_time" class="form-control" style="font-family:Comfortaa" placeholder="insert the time of the event">
         <br>
         <br>
         <h3 style="font-family:Comfortaa">Pick the topic of your event:</h3>
@@ -56,17 +65,23 @@
         <br>
         <br>
         <h3 style="font-family:Comfortaa">Describe your event:</h3>
-        <input type="text" name="event_description" style="font-family:Comfortaa">
+        <input type="text" name="event_description" class="form-control" placeholder="Description" style="font-family:Comfortaa">
         <br>
         <br>
-        <input type="submit" value="Submit" style="font-family:Comfortaa">
+        <input type="submit" class="btn btn-light" value="Submit" style="font-family:Comfortaa">
         <br>
         <br>
-        <a href="{{ url_for('welcome')}} " style="font-family:Comfortaa"> Back to home page! </a>
+        
+        <div class="home_page">
+                <a href= "{{ url_for('welcome')}} ">
+                <button id="Add" type= "button" class="btn btn-outline-secondary" style="font-family:Comfortaa">Back to Home Page!</button>
+                </a>
+            </div>
             
 
         </form>
-        </center>
-
+        
+    </div>
+    </center>
     </body>
 </html>
