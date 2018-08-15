@@ -132,25 +132,25 @@
 #card{
 	position: relative;
 	align-items: center;
-	border-radius: 30%;
-	width: 40%;
-	height: 20%;
-	background-color: rgba(100, 88, 81, 0.3);
+	background-color: rgba(104, 77, 70, 0.7);
 
 
 }
 .card-header{
 	font-size: 25px;
 	font-weight: bold;
+	color: white;
 
 }
 
 .text{
 	font-size: 18px;
+	color: white;
 }
 .titles{
 	font-weight: bold;
 	font-size: 20px;
+	color: white;
 }
 
 
