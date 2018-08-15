@@ -30,15 +30,22 @@
 #Add{
 	position: relative;
 	right: 0px;
+	font-family: 'Comfortaa';
+
 	
 
 }
-#con{
-	position: fixed;
+/*#con{*/
+	/*position: fixed;
 	top: 3%
-	right: 4%;
+	right: 5%;
 }
+#Contact{
+	position: relative;
+	right: 0px;
 
+}
+*/
 	
 
 .body{
@@ -64,4 +71,28 @@
 	border-radius: 100px;
 	width: 100px;
 	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#intrest_page{
+	text-align: center;
+	font-family: 'Comfortaa';
+
+}
+#events_for{
+	margin: auto;
+	border-style: solid;
+	width: 40%;
+
 }
