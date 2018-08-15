@@ -9,12 +9,23 @@
     </head>
     <body id="adding">
     <ul class="nav nav-tabs">
+        <a class="navbar-brand">
+            <img src="../static/mini_logo.png" width="230" height="60">
+        </a>
         <li class="nav-item">
-            <a class="nav-link active" href="{{ url_for('welcome')}} ">Home</a>
+            <a class="nav-link active" href="{{ url_for('welcome')}} " style="font-family:Comfortaa">Home</a>
         </li>
         <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link" href="/">Log Out</a>
+=======
+            <a class="nav-link active" href="/home" style="font-family:Comfortaa">Log Out</a>
+>>>>>>> a08743c37814f13a01c6477bc4108363fe8742f5
         </li>
+         
+
+    </ul>
+    <br>
     <center>
     <div id="adding_content">
         
@@ -42,7 +53,12 @@
             
         <br>
         <br>
-        <input type="text" name="age_limit" class="form-control" placeholder="insert event age limit" style="font-family:Comfortaa">
+
+        <input type="number" name="age_limit" class="form-control" placeholder="insert event age limit" style="font-family:Comfortaa">
+
+        
+
+
         <br>
 
         <br>
@@ -70,6 +86,11 @@
         <input type="radio" name="topic" value="Gaming">Gaming
         </div>
         <br>
+
+        <br>
+        <input type="text" name="event_adress" placeholder="event adress" style="font-family:Comfortaa">
+        <br>
+
         <h3 style="font-family:Comfortaa">Describe your event:</h3>
         <input type="text" name="event_description" class="form-control" placeholder="Description" style="font-family:Comfortaa">
         <br>
@@ -79,6 +100,7 @@
         <br>
         <br>
         
+<<<<<<< HEAD
         <div class="home_page">
                 <a href= "{{ url_for('welcome')}} ">
                 <button id="Add" type= "button" class="btn btn-outline-secondary" style="font-family:Comfortaa">Back to Home Page!</button>
@@ -93,6 +115,9 @@
         <input type="submit" value="Submit" style="font-family:Comfortaa">
         <br>
         <a href="{{ url_for('welcome')}} " style="font-family:Comfortaa"> Back to home page! </a>
+=======
+        
+>>>>>>> a08743c37814f13a01c6477bc4108363fe8742f5
 
             
 

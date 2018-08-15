@@ -27,7 +27,8 @@ def add_event_route():
         event_topic = request.form['topic']
         age_limit = request.form['age_limit']
         event_time = request.form['event_time']
-        add_event(event_name, event_topic, event_location, event_description, age_limit, event_time)
+        event_adress = request.form['event_adress']
+        add_event(event_name, event_topic, event_location, event_description, age_limit, event_time , event_adress)
         return render_template("add_event.html")
 
     
