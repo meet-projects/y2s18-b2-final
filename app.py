@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 app.secret_key = 'super secret key'
 # App routing code here
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
+@app.route('/')
+def home():
+   return render_template('home.html')
 
 
 
