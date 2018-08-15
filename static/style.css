@@ -16,6 +16,10 @@
 	position: fixed;
 	top:3%;
 	right: 1%;
+	background-color: rgba(100, 88, 81, 0.5);
+	color: white;
+	font-weight: bold;
+
 }
 
 
@@ -53,6 +57,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#home_body{
+	background-image: url("b6.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
 #adding{
 	background-image: url("b7.jpg");
 	background-repeat: no-repeat;
@@ -64,7 +74,7 @@
 
 }
 #h{
-	color: white;
+	color: #0B4B94;
 	font-family: 'Comfortaa';
 	font-weight: bold;
 	font-size: 28px;
