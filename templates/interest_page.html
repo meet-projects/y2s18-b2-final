@@ -15,11 +15,16 @@
         		<br>
         		Descreption:{{event.event_description}}.
         		<br>
-        		Location:{{event.event_location}}.
+        		Location:{{event.event_location}} , {{event.event_adress}}.
+
         		<br>
+
         		age limit :{{event.age_limit}}
-                <br> 
-                Event Time:{{event.event_time}} 
+
+                <br>
+                Date & Time:{{event.event_time}}
+
+
         	</p>
         {%endfor%}
         <a href="{{ url_for('welcome')}} "> Back to home page! </a>
