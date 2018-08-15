@@ -23,12 +23,13 @@ def add_event_route():
     else:                                                          
         event_name = request.form['event_name']
         event_location = request.form['event_location']
-        event_description = request.form['event_description']
+        event_description = request.form['event_description'] 
         event_topic = request.form['topic']
         age_limit = request.form['age_limit']
         event_time = request.form['event_time']
         event_adress = request.form['event_adress']
-        add_event(event_name, event_topic, event_location, event_description, age_limit, event_time , event_adress)
+        event_date = request.form['event_date']
+        add_event(event_name, event_topic, event_location, event_description, age_limit, event_time , event_adress, event_date)
         return render_template("add_event.html")
 
     
